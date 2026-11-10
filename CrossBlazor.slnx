@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="CrossBlazor.Hybrid/CrossBlazor.Hybrid.csproj" Id="c6712142-a97b-4722-9399-159a135a200e" />
+  <Project Path="CrossBlazor.Shared/CrossBlazor.Shared.csproj" Id="dd8b0224-dc48-4bdb-bc5a-aea17d77e893" />
+  <Project Path="CrossBlazor.Web/CrossBlazor.Web.csproj" Id="fa9ace0d-6211-4cf9-85e6-454d91e3f82d" />
+</Solution>
