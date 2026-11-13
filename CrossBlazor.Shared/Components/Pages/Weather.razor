@@ -1,7 +1,8 @@
 ﻿@page "/weather"
+
 @using CrossBlazor.Shared.Models
 
-<h1>Weather</h1>
+<PageTitle>@title | Hosted Blazor</PageTitle>
 
 <p>This component demonstrates showing data.</p>
 
@@ -36,9 +37,14 @@ else
 
 @code {
     private WeatherForecast[]? forecasts;
+    private string title = "Weather";
+
+    [CascadingParameter]
+    public EventCallback<string> OnLoaded { get; set; }
 
     protected override async Task OnInitializedAsync()
     {
+        await OnLoaded.InvokeAsync(title);
         // Simulate asynchronous loading to demonstrate a loading indicator
         await Task.Delay(500);
 
